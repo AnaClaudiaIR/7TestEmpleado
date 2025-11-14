@@ -1,15 +1,10 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Gerente gerente = new Gerente("Pepito Grillo", 8000.45, "Recursos Humanos", 2234.0);
+        Desarrollador desarrollador = new Desarrollador("Nombre",3454.90,"Ventas","Java");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        System.out.println(gerente.mostrarInformacion());
+        System.out.println("=========================");
+        System.out.println(desarrollador.mostrarInformacion());
     }
 }
